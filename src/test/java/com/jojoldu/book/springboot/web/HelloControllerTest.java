@@ -14,13 +14,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @ExtendWith(SpringExtension.class)
 @WebMvcTest(controllers = HelloController.class)
+
 public class HelloControllerTest {
 
     @Autowired
     private MockMvc mvc;
 
     @Test
-    public void Hello리턴() throws Exception {
+    public void Hello_return() throws Exception {
         String hello= "hello";
 
         mvc.perform(get("/hello"))
@@ -29,7 +30,7 @@ public class HelloControllerTest {
     }
 
     @Test
-    public void Dto리턴() throws Exception {
+    public void Dto_return() throws Exception {
         String name= "hello";
         int amount=1000;
 
