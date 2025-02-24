@@ -1,6 +1,6 @@
 package com.jojoldu.book.springboot.config.auth;
 
-import com.jojoldu.book.springboot.domain.user.Role;
+import com.jojoldu.book.springboot.domain.users.Role;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
