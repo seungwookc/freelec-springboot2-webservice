@@ -59,6 +59,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.session:spring-session-jdbc'
+    testImplementation 'org.springframework.security:spring-security-test'
 }
 
 
@@ -66,4 +67,6 @@ tasks.named('test') {
     useJUnitPlatform()
     //jvmArgs '-Xshare:off'
 }
-
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
