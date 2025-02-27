@@ -60,6 +60,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.session:spring-session-jdbc'
     testImplementation 'org.springframework.security:spring-security-test'
+
+    implementation 'org.mariadb.jdbc:mariadb-java-client'
 }
 
 
@@ -69,4 +71,7 @@ tasks.named('test') {
 }
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
+}
+jar {
+    enabled = false
 }
